@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Mpok Titin</title>
+    <link rel="icon" type="image/png" href="/img/logo1_nbg.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!-- Fixed Cart Button -->
+      <button id="openCart" class="fixed-cart-btn">
+        <i class="bi bi-cart-check"></i>
+        <span class="fixed-cart-count" id="cartCount">0</span>
+      </button>
+
+      <!-- Hero Header with Background Carousel -->
+      <header class="hero-header">
+        <!-- Background Carousel -->
+        <div class="background-carousel" id="backgroundCarousel">
+          <div
+            class="background-slide active"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1535227798054-e4373ef3795a?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            "
+          ></div>
+          <div
+            class="background-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            "
+          ></div>
+          <div
+            class="background-slide"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            "
+          ></div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+          <div class="logo-container">
+            <div class="restaurant-logo">
+              <img src="/img/logo1_nbg.png" alt="Logo Warung Mpok Titin" />
+            </div>
+          </div>
+          <h1 class="restaurant-name">Warung Mpok Titin</h1>
+          <p class="tagline">Rasa Rumahan, Harga Bersahabat</p>
+          <a href="#menu" class="cta-button">Lihat Menu Kami</a>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section id="about" class="container mt-5">
+        <h2 class="section-title">Tentang Warung Kami</h2>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1763142214145-719994a5df19?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Warung Mpok Titin"
+              class="about-image"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="about-section">
+              <h3 class="fw-bold mb-3" style="color: #283618">
+                Sejak 2021 - Menghadirkan Rasa Rumahan
+              </h3>
+              <p class="text-muted mb-3">
+                Warung Mpok Titin bukan sekadar tempat makan biasa. Kami adalah
+                cerita tentang cita rasa rumahan yang berawal dari sebuah lokasi
+                sederhana di Jl. Mandor Jaun V No. 43, Pancoran Mas, Depok pada
+                tahun 2021. Visi kami sederhana: membuat siapa pun bisa
+                menikmati makanan enak, sehat, dan terjangkau setiap harinya.
+              </p>
+              <p class="text-muted mb-3">
+                Kami hadir untuk mengisi energi para pekerja yang sibuk,
+                menemani diskusi seru pelajar dan mahasiswa, serta menjadi
+                solusi praktis untuk keluarga yang rindu masakan rumah. Bagi
+                kami, setiap pelanggan adalah tamu kehormatan.
+              </p>
+              <p class="text-muted mb-4">
+                Nikmati hidangan kami langsung di tempat yang bersih dan nyaman,
+                atau pesan untuk acara spesial Anda. Layanan katering kami siap
+                mendukung kebutuhan keluarga (syukuran, arisan) dan profesional
+                (rapat, konsumsi kantor) dengan penuh ketelitian.
+              </p>
+              <div class="d-flex gap-4 flex-wrap">
+                <div class="text-center">
+                  <div
+                    class="fw-bold"
+                    style="color: #283618; font-size: 1.5rem"
+                  >
+                    4+
+                  </div>
+                  <div class="text-muted">Tahun Berjalan</div>
+                </div>
+                <div class="text-center">
+                  <div
+                    class="fw-bold"
+                    style="color: #283618; font-size: 1.5rem"
+                  >
+                    10+
+                  </div>
+                  <div class="text-muted">Menu Andalan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="menu" class="container mt-5">
+        <h2 class="section-title">Menu Andalan Kami</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img src="/img/gadogado.jpg" alt="Gado-Gado" class="menu-image" />
+              <div class="p-4">
+                <h5 class="fw-bold">Gado-Gado</h5>
+                <p class="text-muted">
+                  Sayuran segar dengan bumbu kacang spesial
+                </p>
+                <div class="price-tag">Rp 10.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Gado-Gado"
+                data-price="10000"
+                data-id="1"
+                data-image="img/gadogado.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-1">0</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img
+                src="img/ayampenyet.jpg"
+                alt="Ayam Penyet"
+                class="menu-image"
+              />
+              <div class="p-4">
+                <h5 class="fw-bold">Ayam Penyet</h5>
+                <p class="text-muted">
+                  Ayam goreng dengan sambal hijau khas Warung Mpok Titin
+                </p>
+                <div class="price-tag">Rp 18.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Ayam Penyet"
+                data-price="18000"
+                data-id="2"
+                data-image="/img/ayampenyet.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-2">0</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img
+                src="/img/nasigoreng.jpg"
+                alt="Nasi Goreng"
+                class="menu-image"
+              />
+              <div class="p-4">
+                <h5 class="fw-bold">Nasi Goreng</h5>
+                <p class="text-muted">
+                  Nasi goreng spesial dengan telur mata sapi dan kerupuk
+                </p>
+                <div class="price-tag">Rp 10.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Nasi Goreng"
+                data-price="10000"
+                data-id="3"
+                data-image="/img/nasigoreng.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-3">0</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img
+                src="/img/steakayam.jpg"
+                alt="Steak Ayam"
+                class="menu-image"
+              />
+              <div class="p-4">
+                <h5 class="fw-bold">Steak Ayam</h5>
+                <p class="text-muted">
+                  Daging ayam pilihan dengan saus spesial dan kentang goreng
+                </p>
+                <div class="price-tag">Rp 20.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Steak Ayam"
+                data-price="20000"
+                data-id="4"
+                data-image="/img/steakayam.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-4">0</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img src="/img/pempek.jpg" alt="Pempek" class="menu-image" />
+              <div class="p-4">
+                <h5 class="fw-bold">Pempek</h5>
+                <p class="text-muted">
+                  Pempek ikan dengan kuah cuko khas Palembang
+                </p>
+                <div class="price-tag">Rp 10.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Pempek"
+                data-price="10000"
+                data-id="5"
+                data-image="/img/pempek.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-5">0</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="menu-card">
+              <img
+                src="/img/mierebus.jpg"
+                alt="Mie Raebus"
+                class="menu-image"
+              />
+              <div class="p-4">
+                <h5 class="fw-bold">Mie Rebus</h5>
+                <p class="text-muted">
+                  Mie rebus dengan telur, sayuran, dan kuah kaldu gurih
+                </p>
+                <div class="price-tag">Rp 10.000</div>
+              </div>
+              <button
+                class="cart-btn"
+                data-name="Mie Rebus"
+                data-price="10000"
+                data-id="6"
+                data-image="/img/mierebus.jpg"
+              >
+                <i class="bi bi-cart-plus"></i>
+                <span class="cart-badge" id="badge-6">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cart Sidebar -->
+      <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+          <h4>Keranjang Belanja</h4>
+          <button class="cart-close" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+          <p class="text-center text-muted">Keranjang Anda masih kosong</p>
+        </div>
+        <div class="cart-total" id="cartTotal">Total: Rp 0</div>
+        <button class="checkout-btn" id="checkoutBtn">
+          <i class="bi bi-whatsapp me-2"></i>Pesan via WhatsApp
+        </button>
+      </div>
+
+      <!-- Cart Overlay -->
+      <div class="cart-overlay" id="cartOverlay"></div>
+
+      <!-- Contact Section -->
+      <section class="container mt-5">
+        <h2 class="section-title">Pesan Sekarang!</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="lead mb-4">
+              Hubungi kami melalui WhatsApp atau Instagram untuk memesan!
+            </p>
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+              <a
+                href="https://wa.me/628999537861"
+                class="contact-btn text-white text-decoration-none"
+              >
+                <i class="bi bi-whatsapp me-2"></i>WhatsApp
+              </a>
+              <a
+                href="https://instagram.com/warungmpoktitin"
+                class="contact-btn text-white text-decoration-none"
+              >
+                <i class="bi bi-instagram me-2"></i>Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section class="container mt-5">
+        <h2 class="section-title">Lokasi Kami</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.80938075139588!2d106.81306456181291!3d-6.400432597041346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e9ef24b521ff%3A0xb8cae22edb796bbf!2sGubuk%20Si%20Jantuk!5e0!3m2!1sen!2sid!4v1763996928875!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <div class="text-center mt-4">
+              <p class="text-muted fs-5">
+                Jl.Mandor Jaun V, No. 43 Kec.Pancoran Mas, Depok, Jawa Barat
+                16436
+              </p>
+              <p class="text-muted fs-5">Buka setiap hari: 08.00 - 21.00 WIB</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container text-center">
+          <p class="mb-0">
+            &copy; 2024 Warung Mpok Titin. All rights reserved.
+          </p>
+          <p class="mt-2">Rasa autentik, harga bersahabat!</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
